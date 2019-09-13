@@ -1,0 +1,15 @@
+<h2>{{ pokes.name }} Details</h2>
+
+{{#if loadedInfo}}
+<h4>Is True</h4>
+<img
+  src="{{ pokes.sprites.front_shiny }}"
+  alt="a shiny {{ pokes.name }}'s front sprite"
+/>
+{{else}}
+<h4>Is False</h4>
+<img
+  src="{{ pokes.sprites.front_default }}"
+  alt="{{ pokes.name }} front sprite"
+/>
+{{/if}}
